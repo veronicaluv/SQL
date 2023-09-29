@@ -1,0 +1,18 @@
+# Display the database ordered by price
+SELECT *
+FROM superstore
+ORDER BY price;
+
+# What is the average price of items in the category column?
+SELECT AVG(price), category
+FROM superstore;
+
+# What is the sum price of items in the category kitchen supplies?
+SELECT SUM(price)
+FROM superstore
+WHERE category= "Kitchen Supplies";
+
+# How many cozy throw blankets are in stock?
+SELECT stock_quantity
+FROM superstore
+WHERE item_name = "Cozy Throw Blanket";
